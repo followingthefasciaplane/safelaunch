@@ -19,7 +19,7 @@ if exist assignmentnotes.txt (
     )
 ) else (
     :: File does not exist, ask for path
-    set /p "unlockerPath=Paste the path to the unlocker (without quotation marks): "
+    set /p "unlockerPath=Paste the path to the unlocker without quotation marks: "
     for %%a in ("!unlockerPath!") do (
         set "unlockerName=%%~nxa"
         set "unlockerDir=%%~dpa"
